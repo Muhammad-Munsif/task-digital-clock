@@ -1,0 +1,46 @@
+/* Custom styles to complement Tailwind */
+body.dark {
+    background-color: #111827;
+    color: #f3f4f6;
+}
+
+body.light {
+    background-color: #f3f4f6;
+    color: #111827;
+}
+
+body.light .clock {
+    background-color: #e5e7eb;
+}
+
+body.light .hours,
+body.light .minutes,
+body.light .seconds {
+    background-color: #d1d5db;
+    color: #059669;
+}
+
+body.light .date {
+    color: #4b5563;
+}
+
+body.light .colon {
+    color: #059669;
+}
+
+body.light .ampm {
+    background-color: #059669;
+    color: #f9fafb;
+}
+/* .ampm {
+    display: block;
+} */
+/* Animation for the colon */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+.colon {
+    animation: blink 1s infinite;
+}
